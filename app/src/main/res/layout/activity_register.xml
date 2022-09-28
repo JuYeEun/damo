@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/newuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.083">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edit_register_name"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/border"
+            android:hint="Name"
+            android:layout_marginTop="20dp"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+
+        <EditText
+            android:id="@+id/edit_register_email"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/border"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edit_register_password"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:minHeight="48dp"
+            android:hint="Password"
+            android:textColorHint="#FFFFFF" />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="20sp"
+            android:textColor="#4F68F3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:background="@drawable/button" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="이미 회원이신가요?\n 로그인 하러가기 : )"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="로그인"
+            android:textColor="#4F68F3"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#8FFFFFFF"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="214dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="412dp"
+        android:layout_height="144dp"
+        android:background="@drawable/header"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:text="저상버스 알리미"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/imageMenu"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageMenu">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back"
+                android:padding="6dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#0B4BED" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_home_bus"
+        android:layout_width="135dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/back"
+        android:drawableTop="@drawable/bus"
+        android:text="버스 검색"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    sS
+
+    <Button
+        android:id="@+id/btn_home_review"
+        android:layout_width="132dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/back"
+        android:drawableTop="@drawable/survey"
+        android:text="리뷰"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_bus_stop"
+        app:layout_constraintVertical_bias="0.212"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_home_bus_stop"
+        android:layout_width="132dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/back"
+        android:drawableTop="@drawable/busstop"
+        android:text="정류장 검색"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_home_bus"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_home_book"
+        android:layout_width="132dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/back"
+        android:drawableTop="@drawable/book"
+        android:text="탑승예약"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_home_review"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_home_bus"
+        app:layout_constraintVertical_bias="0.212"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="342dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/homebackground"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+        app:layout_constraintVertical_bias="0.895">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
