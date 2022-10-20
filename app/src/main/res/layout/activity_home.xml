@@ -60,19 +60,20 @@
             app:layout_constraintTop_toBottomOf="@+id/imageMenu">
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="330dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@drawable/back"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-            <ImageView
-                android:layout_width="40dp"
+            <Button
+                android:id="@+id/btn_go_search"
+                android:layout_width="53dp"
                 android:layout_height="40dp"
-                android:background="@drawable/back"
-                android:padding="6dp"
-                android:src="@android:drawable/ic_menu_search"
-                app:tint="#0B4BED" />
+                app:icon="@drawable/search"
+                app:iconTint="#000000"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
         </LinearLayout>
 
 
@@ -81,10 +82,10 @@
 
     <Button
         android:id="@+id/btn_home_bus"
-        android:layout_width="135dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
         android:background="@drawable/back"
         android:drawableTop="@drawable/bus"
         android:text="버스 검색"
@@ -94,31 +95,11 @@
         app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    sS
-
-    <Button
-        android:id="@+id/btn_home_review"
-        android:layout_width="132dp"
-        android:layout_height="124dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/back"
-        android:drawableTop="@drawable/survey"
-        android:text="리뷰"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_home_bus_stop"
-        app:layout_constraintVertical_bias="0.212"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <Button
         android:id="@+id/btn_home_bus_stop"
-        android:layout_width="132dp"
-        android:layout_height="124dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="152dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/back"
         android:drawableTop="@drawable/busstop"
@@ -126,29 +107,9 @@
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toEndOf="@+id/btn_home_bus"
         app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/btn_home_book"
-        android:layout_width="132dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/back"
-        android:drawableTop="@drawable/book"
-        android:text="탑승예약"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toStartOf="@+id/btn_home_review"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_home_bus"
-        app:layout_constraintVertical_bias="0.212"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
@@ -166,7 +127,7 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
-        app:layout_constraintVertical_bias="0.895">
+        app:layout_constraintVertical_bias="0.776">
 
         <ScrollView
             android:layout_width="match_parent"

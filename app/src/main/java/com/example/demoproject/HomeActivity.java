@@ -9,16 +9,16 @@ import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button Btn_Home_Bus, Btn_Home_Bus_Stop,Btn_Home_Review, Btn_Home_Book;
+    Button Btn_Home_Bus, Btn_Home_Bus_Stop,Btn_go_Search;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Btn_Home_Book = findViewById(R.id.btn_home_book);
+        Btn_go_Search = findViewById(R.id.btn_go_search);
         Btn_Home_Bus = findViewById(R.id.btn_home_bus);
         Btn_Home_Bus_Stop = findViewById(R.id.btn_home_bus_stop);
-        Btn_Home_Review = findViewById(R.id.btn_home_review);
+
 
         Btn_Home_Bus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +30,13 @@ public class HomeActivity extends AppCompatActivity {
         Btn_Home_Bus_Stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,BusStopSearchActivity.class);
+                startActivity(intent);
+            }
+        });
+        Btn_go_Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this,BusStopSearchActivity.class);
                 startActivity(intent);
             }

@@ -11,14 +11,21 @@
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/drawable/homebackground.xml" value="0.187" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/drawable/search.xml" value="0.1" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/drawable/seconudbutton.xml" value="0.155" />
-        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_bus_search.xml" value="0.1" />
-        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_bus_stop_search.xml" value="0.1796875" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_bus_rider.xml" value="0.22" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_bus_search.xml" value="0.12" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_bus_stop_search.xml" value="0.1" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_first.xml" value="0.22" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_register.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_reservation.xml" value="0.22" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_station_iactivity.xml" value="0.1" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/activity_stationinfo.xml" value="0.1" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/bus_item.xml" value="0.1" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/item.xml" value="0.12" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/item_list.xml" value="0.22" />
+        <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/layout/layout.xml" value="0.22" />
         <entry key="..\:/Users/ppui0/AndroidStudioProjects/Demoproject/app/src/main/res/menu/menu.xml" value="0.17916666666666667" />
       </map>
     </option>

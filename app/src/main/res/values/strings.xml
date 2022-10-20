@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Demoproject</string>
+    <string-array name="numbers">
+        <item>녹번역</item>
+        <item>산골고개</item>
+        <item>홍제역.서대문세무서</item>
+        <item>홍제삼거리</item>
+        <item>무악재역</item>
+        <item>안산초등학교</item>
+        <item>독립문역.한성과학고</item>
+        <item>영천시장</item>
+        <item>서대문역</item>
+        <item>경찰청.동북아역사재단</item>
+        <item>서울역버스환승센터</item>
+        <item>갈월동</item>
+    </string-array>
 </resources>

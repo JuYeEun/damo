@@ -45,7 +45,7 @@
             android:textStyle="normal" />
 
         <EditText
-            android:id="@+id/edit_register_name"
+            android:id="@+id/et_name"
             android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
 
 
         <EditText
-            android:id="@+id/edit_register_email"
+            android:id="@+id/et_id"
             android:paddingRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             android:textColorHint="#FFFFFF"/>
 
         <EditText
-            android:id="@+id/edit_register_password"
+            android:id="@+id/et_pass"
             android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,6 +85,19 @@
             android:background="@drawable/border"
             android:minHeight="48dp"
             android:hint="Password"
+            android:textColorHint="#FFFFFF" />
+        <EditText
+            android:id="@+id/et_age"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:minHeight="48dp"
+            android:hint="Age"
             android:textColorHint="#FFFFFF" />
         <Button
             android:id="@+id/btn_register"
@@ -126,6 +139,7 @@
             android:textColor="#4F68F3"
             android:textStyle="bold"
             android:typeface="sans" />
+
 
     </LinearLayout>
 

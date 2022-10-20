@@ -3,7 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.demoproject">
 
+    <!--2.인터넷 권한 선언-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--3.android:usesCleartextTraffic="true" 무조건 선언!!-->
     <application
+
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,7 +18,21 @@
         android:roundIcon="@drawable/bus"
         android:supportsRtl="true"
         android:theme="@style/Theme.Demoproject"
+        tools:ignore="ExtraText"
         tools:targetApi="31">
+        <activity
+            android:name=".StationIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusRiderActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ReservationActivity"
+            android:exported="false" />
         <activity
             android:name=".BusStopSearchActivity"
             android:exported="false" />
@@ -26,7 +46,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".FirstActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

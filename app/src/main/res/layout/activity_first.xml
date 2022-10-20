@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androud="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FirstActivity">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="안녕하세요 : ) \n저상버스알리미 입니다 "
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        androud:layout_constraintBottom_toTopOf="@+id/textView9"
+        androud:layout_constraintEnd_toEndOf="parent"
+        androud:layout_constraintStart_toStartOf="parent"
+        androud:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="359dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="128dp"
+        android:text="_______________"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        androud:layout_constraintEnd_toEndOf="parent"
+        androud:layout_constraintStart_toStartOf="parent"
+        androud:layout_constraintTop_toTopOf="parent"
+      />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button"
+        android:contentDescription="@string/common_signin_button_text_long"
+        android:text="버스기사"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/btn_go_login_rider"
+        androud:layout_constraintBottom_toBottomOf="parent"
+        androud:layout_constraintEnd_toEndOf="parent"
+        androud:layout_constraintHorizontal_bias="0.361"
+        androud:layout_constraintStart_toEndOf="@+id/btn_go_login_user"
+        androud:layout_constraintTop_toBottomOf="@+id/textView8"
+        androud:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_go_login_user"
+        android:layout_width="156dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/button"
+        android:contentDescription="@string/common_signin_button_text_long"
+        android:text="교통약자"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        androud:layout_constraintBottom_toBottomOf="parent"
+        androud:layout_constraintStart_toStartOf="parent"
+        androud:layout_constraintTop_toBottomOf="@+id/textView8"
+        androud:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
